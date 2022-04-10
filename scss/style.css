@@ -1,0 +1,25 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  text-overflow: hidden;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  background-color: #222831;
+  height: 60px;
+  width: 100%;
+}
+
+.header .section {
+  margin: 0;
+  padding: 0;
+}
+
+.header .section .logo img {
+  width: 120px;
+}
+/*# sourceMappingURL=style.css.map */

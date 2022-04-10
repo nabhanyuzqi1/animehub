@@ -1,0 +1,48 @@
+//define global style and size
+$myFont: Helvetica, sans-serif;
+$myFontSize: 18px;
+
+//define global color
+$primary_black: #222831;
+$primary_grey: #393E46;
+$primary_blue: #00ADB5;
+$primary_lightgrey: #EEEEEE;
+
+body{
+    font: {
+        family: $myFont;
+        size: $myFontSize;
+    }
+
+    text: {
+        overflow: hidden;
+    }
+
+    margin: {
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.header {
+    background-color: $primary_black;
+    height: 60px;
+    width: 100%;
+
+    .section {
+        margin: 0;
+        padding: 0;
+        .logo {
+            img {
+                width: 120px;
+            }
+        }
+    }
+}
+
+.menu {
+    
+}
+
