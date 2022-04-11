@@ -1,6 +1,7 @@
 //define global style and size
 $myFont: Helvetica, sans-serif;
-$myFontSize: 18px;
+$myFontSize: 16px;
+$pHolderFont: 14px;
 
 //define global color
 $primary_black: #222831;
@@ -8,6 +9,7 @@ $primary_grey: #393E46;
 $primary_blue: #00ADB5;
 $primary_lightgrey: #EEEEEE;
 $primary_white: #ffffff;
+$hover_button: #ccc;
 
 body{
     font: {
@@ -27,52 +29,82 @@ body{
     }
 }
 
-.header {
+.top-header {
+    display: flex;
+    justify-content: center;
     background-color: $primary_black;
     overflow: hidden;
-    height: 60px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
+    padding: 0;
     .section {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        width: 90%;
         align-items: center;
-        width: 100%;
         height: 70px;
-        margin: 0;
-        padding: 0;
 
         div {
             
         }
-        .logo {
+
+        .logo { 
             img {
                 width: 120px;
             }
         }
 
-        .nav {
+        .navbar {
             a {
-                
                 color: $primary_white;
-                padding: 14px 16px;
+                padding: 26px 20px 27px 20px;
                 text-decoration: none;
                 font-size: $myFontSize;
             }
+
+            a.active {
+                background: $primary_blue;
+            }
+
+            a:hover{
+                background: $primary_blue;
+            }
         }
 
-        .sidebar{
-            input[type=text] {
+        .search-container{
+            input[type=text] {   
+                padding: 5px;
+                margin-top: 8px;
+                font-size: $pHolderFont;
+                border: 1px solid $primary_lightgrey;
+                border-radius: 25px 0 0 25px;
+            }
+
+            button {
                 float: right;
-                padding: 6px;
-                border: 1px solid #ccc;
-                margin {
-                    top: 8px;
-                    right: 16px;
+                padding: 5px 10px;
+                margin-top: 8px;
+                margin-right: 16px;
+                background: #ddd;
+                font-size: 5px;
+                cursor: pointer;
+
+                border: 1px solid $primary_lightgrey;
+                border-radius: 0 25px 25px 0;
+                img {
+                    width: 15px;
                 }
+            }
+
+            button:hover {
+                background: $hover_button;
             }
         }
     }
+}
+
+.bottom-header {
+    background-color: $primary_blue;
+    width: 100%;
+    height: 5px;
 }

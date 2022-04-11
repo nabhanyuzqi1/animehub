@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-overflow: hidden;
   margin-right: 0;
   margin-left: 0;
@@ -8,57 +8,84 @@ body {
   margin-bottom: 0;
 }
 
-.header {
-  background-color: #222831;
-  overflow: hidden;
-  height: 60px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .section {
+.top-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #222831;
+  overflow: hidden;
   width: 100%;
-  height: 70px;
   margin: 0;
   padding: 0;
 }
 
-.header .section .logo img {
+.top-header .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+.top-header .section .logo img {
   width: 120px;
 }
 
-.header .section .nav a {
+.top-header .section .navbar a {
   color: #ffffff;
-  padding: 14px 16px;
+  padding: 26px 20px 27px 20px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.header .section .sidebar input[type=text] {
+.top-header .section .navbar a.active {
+  background: #00ADB5;
+}
+
+.top-header .section .navbar a:hover {
+  background: #00ADB5;
+}
+
+.top-header .section .search-container input[type=text] {
+  padding: 5px;
+  margin-top: 8px;
+  font-size: 14px;
+  border: 1px solid #EEEEEE;
+  border-radius: 25px 0 0 25px;
+}
+
+.top-header .section .search-container button {
   float: right;
-  padding: 6px;
-  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 5px;
+  cursor: pointer;
+  border: 1px solid #EEEEEE;
+  border-radius: 0 25px 25px 0;
 }
 
-.header .section .sidebar input[type=text] margin {
-  top: 8px;
-  right: 16px;
+.top-header .section .search-container button img {
+  width: 15px;
+}
+
+.top-header .section .search-container button:hover {
+  background: #ccc;
+}
+
+.bottom-header {
+  background-color: #00ADB5;
+  width: 100%;
+  height: 5px;
 }
 /*# sourceMappingURL=style.css.map */
